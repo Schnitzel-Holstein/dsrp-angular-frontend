@@ -1,48 +1,126 @@
 <!-- Sidebar Component -->
 <div class="wrapper d-flex align-items-stretch">
-    <nav id="sidebar">
-        <div class="custom-menu">
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-bars"></i>
-            <span class="sr-only">Menu pa Admins</span>
-            </button>
-        </div>
-        <div class="p-4">
-            <h1>
-                <a [routerLink]="['/']" routerLinkActive="router-link-active"  class="logo">Demon Slayer<span>Panel de Administración</span></a>
-            </h1>
-            <ul class="list-unstyled components mb-5">
-                <li class="active">
-                    <a href="#"><span class="fa fa-home mr-3"></span> Inicio</a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa fa-user mr-3"></span> Usuarios</a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa fa-briefcase mr-3"></span> Categorías y Foros</a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa fa-sticky-note mr-3"></span> Relleno 1</a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa fa-suitcase mr-3"></span> Relleno 2</a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa fa-cogs mr-3"></span> Relleno 4</a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa fa-paper-plane mr-3"></span> Relleno 5</a>
-                </li>
-            </ul>
-            <div class="footer">
-	        	<p>Copyright &copy; 2020. <a href="https://github.com/Schnitzel-Holstein" style="color:#38d0c8!important;">Schnitzel-Holstein</a></p>
-	        </div>
-        </div>
-    </nav>
+    <app-sidebar></app-sidebar>
 <!-- Dashboard Component  -->
     <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">Tablón Principal o como verga se llame</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="mb-4">Datos Generales</h2>
+        <div class="row">
+            <div class="col-12">    
+                <div class="card padbot">
+                    <div class="row m-0 col-border-xl">
+                        <div class="col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body">
+                                <h5 class="card-title m-b-5 counter text-warning" data-count="1"><i class="fa fa-user text-center" aria-hidden="true"></i> 1</h5>
+                                <h6 class="text-muted m-t-10">
+                                    Usuarios Registrados
+                                </h6>
+                                <div class="progress progress-active-sessions mt-4" style="height:7px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted float-left m-t-5 mb-3">
+                                    Objetivo
+                                </small>
+                                <small class="text-muted float-right m-t-5 mb-3 counter append-percent" data-count="100">100</small>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body">
+                                <h5 class="card-title m-b-5 append-percent counter text-info" data-count="0"><i class="fa fa-file-text" aria-hidden="true"></i> 0</h5>
+                                <h6 class="text-muted m-t-10">
+                                    Post hechos
+                                </h6>
+                                <div class="progress progress-add-to-cart mt-4" style="height:7px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="300"></div>
+                                </div>
+                                <small class="text-muted float-left m-t-5 mb-3">
+                                    Objetivo
+                                </small>
+                                <small class="text-muted float-right m-t-5 mb-3 counter append-percent" data-count="300">300</small>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body">
+                                <h5 class="card-title m-b-5 counter text-danger" data-count="0"><i class="fa fa-wrench" aria-hidden="true"></i> 0</h5>
+                                <h6 class="text-muted m-t-10">
+                                    Problemas Activos
+                                </h6>
+                                <div class="progress progress-new-account mt-4" style="height:7px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted float-left m-t-5 mb-3">
+                                    Objetivo
+                                </small>
+                                <small class="text-muted float-right m-t-5 mb-3 counter append-percent" data-count="0">0</small>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-3">
+                            <div class="card-body">
+                                <h5 class="card-title m-b-5 prepend-currency counter text-success" data-count="0"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                     0</h5>
+                                <h6 class="text-muted m-t-10">
+                                    Narraciones Activas
+                                </h6>
+                                <div class="progress progress-total-revenue mt-4" style="height:7px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10"></div>
+                                </div>
+                                <small class="text-muted float-left m-t-5 mb-3">  
+                                    Objetivo
+                                </small>
+                                <small class="text-muted float-right m-t-5 mb-3 counter append-percent" data-count="10">10</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-lg-12 col-xl-9" style="float: left;">
+                <div class="card">
+                    <div class="card body">
+                        <ngb-tabset type="pills" class="m-4">
+                            <ngb-tab title="Metas Cumplidas">
+                              <ng-template ngbTabContent>
+                                <ul class="m-2">
+                                    <li>Clavar con martillo de cristal.</li>
+                                    <li>Comprar tazas para surdos.</li>
+                                    <li>Inventar los penes voladores.</li>
+                                    <li>Cantar un reguetón bien cabrón en una iglesia.</li>
+                                    <li>Cazar pájaros dodos en Alaska.</li>
+                                    <li>Hablar mierda de Coelho.</li>
+                                    <li>Perrear bajo la luz de la luna.</li>
+                                    <li>Soy un texto de relleno bien kawaii, estoy acá porque mi creador no tiene ideas suficientes como para representar sus creaciones en su máxima expresión. Aún así soy feliz. bastante. ^^</li>
+                                </ul>
+                              </ng-template>
+                            </ngb-tab>
+                            <ngb-tab>
+                              <ng-template ngbTabTitle>Metas por <b>cumplir</b></ng-template>
+                              <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+                                cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+                                yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+                                shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+                                sint qui sapiente accusamus tattooed echo park.</p>
+                              </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Metas para el mes que viene">
+                              <ng-template ngbTabContent>
+                                <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+                              </ng-template>
+                            </ngb-tab>
+                          </ngb-tabset>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-12 col-xl-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/900x900" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Porno</h5>
+                      <p class="card-text">Acá el contenido de la ambientación, próxima trama, etc.</p>
+                      <a href="#" class="btn gradiant90 white-color">Seguir Leyendo</a>
+                    </div>
+                  </div>
+                  
+            </div>
+            </div>
+        </div>
     </div>
 </div>      <!-- End of Sidebar Component IMPORTANTE -->
