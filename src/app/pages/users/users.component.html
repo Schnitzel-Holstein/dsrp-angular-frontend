@@ -1,0 +1,29 @@
+<!-- Sidebar Component -->
+<div class="wrapper d-flex align-items-stretch">
+    <app-sidebar></app-sidebar>
+<!-- Dashboard Component  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Usuarios</h2>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Email</th>
+                <th scope="col">Facción</th>
+                <th scope="col">Rango</th>
+                <th scope="col">Cambios al Usuario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.roles[1].name}}</td>
+                <td>{{user.roles[2].name}}</td>
+                <td>Ver Más - Editar</td>
+            </tbody>
+          </table>
+    </div>
+</div>      <!-- End of Sidebar Component IMPORTANTE -->

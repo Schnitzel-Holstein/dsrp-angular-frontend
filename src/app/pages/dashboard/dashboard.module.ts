@@ -4,15 +4,16 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-import { SidebarComponent } from 'src/app/shared/sidebar/sidebar.component';
+import { SidebarModule } from 'src/app/shared/sidebar/sidebar.module';
 
 
 @NgModule({
-  declarations: [DashboardComponent, SidebarComponent],
+  declarations: [DashboardComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    NgbModule
+    NgbModule,
+    SidebarModule
   ]
 })
 export class DashboardModule { }

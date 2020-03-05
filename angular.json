@@ -24,8 +24,17 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/assets/css/mdb.css",
+              "src/assets/css/addons/datatables-select.min.css",
+              "src/assets/css/addons/datatables.min.css",
+              "src/assets/css/addons/directives.min.css",
+              "src/assets/css/addons/flag.min.css",
+              "src/assets/css/addons/jquery.zmd.hierarchical-display.min.css",
+              "src/assets/css/addons/rating.min.css",
+              "src/assets/css/modules/animations-extended.min.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
