@@ -1,0 +1,9 @@
+.login-form-header,
+.login-form-button{
+    background: #ffc107;
+}
+
+.login-form-header {
+    border-radius: 0%;
+    border: none;
+}

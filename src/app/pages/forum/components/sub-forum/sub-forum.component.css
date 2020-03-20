@@ -1,0 +1,24 @@
+.sub-forum{
+    cursor: pointer;
+    margin-right: 10px;
+    width: auto;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: lighter;
+    color: black;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+.sub-forum:hover {
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    transition: .2s;
+}
+@media(max-width: 500px) {
+    .sub-forum {
+        width: 100%;
+    }
+}

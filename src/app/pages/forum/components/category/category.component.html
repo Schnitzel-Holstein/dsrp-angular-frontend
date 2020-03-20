@@ -1,0 +1,5 @@
+<app-section-title [title]="category.name"></app-section-title>
+<div class="container catg-content">
+    <app-forum *ngFor="let forum of category.forums" [forum]="forum" class="col-12 col-sm-12"></app-forum>
+</div>
+

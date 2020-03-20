@@ -1,0 +1,39 @@
+<!-- Each forum -->
+<div class="forum row">
+    <div class="col-12 col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <!-- Forum name column -->
+                        <div class="col-12 col-sm-12 col-md-4 title-col">
+                            <div class="title-container">
+                                <h2>{{forum.name}}</h2>
+                                <span class="thread-count">{{totalThreads}} temas</span>
+                            </div>
+                        </div>
+                        <!-- Description and sub forums -->
+                        <div class="col-12 col-sm-12 col-md-4 description-col">
+                            <p class="forum-description">{{forum.description}}</p>
+                            <div class="sub-forums">
+                                <app-sub-forum *ngFor="let subforum of subForums" [forum]="subforum" class="subforum-container"></app-sub-forum>
+                            </div>
+                        </div>
+                        <!-- Images column -->
+                        <div class="col-12 col-sm-12 col-md-4 image-col">
+                            <div class="image-container">
+                                <div class="img-overlay">
+                                    <p *ngIf="lastPost === null">No messages UwU</p>
+                                    <p *ngIf="lastPost !== null">
+                                        <a href="#">{{lastThread.name}}</a>
+                                    </p>
+                                </div>
+                                <img src="https://via.placeholder.com/150x150" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

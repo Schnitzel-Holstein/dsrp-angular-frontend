@@ -1,0 +1,9 @@
+.register-form-header,
+.register-form-button{
+    background: #ffc107;
+}
+
+.register-form-header {
+    border-radius: 0%;
+    border: none;
+}

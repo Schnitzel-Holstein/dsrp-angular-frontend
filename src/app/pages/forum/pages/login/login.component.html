@@ -1,0 +1,50 @@
+<!-- Material form login -->
+<div class="card">
+
+    <h5 class="card-header login-form-header white-text text-center py-4">
+        <strong>Conectarse</strong>
+    </h5>
+  
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+  
+      <!-- Form -->
+      <form class="text-center" style="color: #757575;" action="#!">
+  
+        <!-- Email -->
+        <div class="md-form">
+          <input type="email" id="email" class="form-control" name="email">
+          <label for="email">E-mail</label>
+        </div>
+  
+        <!-- Password -->
+        <div class="md-form">
+          <input type="password" id="password" class="form-control" name="password">
+          <label for="password">Contraseña</label>
+        </div>
+  
+        <div class="d-flex justify-content-start">
+            <div>
+                <!-- Remember me -->
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Recuérdame UwU</label>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Sign in button -->
+        <!--<button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Logeame nomás</button>-->
+        <button class="btn login-form-button btn-block my-4 white-text" type="button">Logeame nomás</button>
+  
+        <!-- Register -->
+        <p>¿No tienes cuenta?
+          <a [routerLink]="'/inicio/register'">Registrate</a>
+        </p>
+  
+      </form>
+      <!-- Form -->
+  
+    </div>
+  
+</div>

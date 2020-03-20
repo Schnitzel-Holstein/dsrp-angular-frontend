@@ -1,0 +1,122 @@
+/** Image and title columns **/
+.image-col,
+.title-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/** Text of the title column */
+.title-col h2 {
+    font-family: 'Dancing Script', sans-serif;
+    background: linear-gradient(to top, #FFD700 0%, rgb(255, 102, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title-col .thread-count {
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+/** Image column **/
+.image-col .image-container {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 170px;
+    height: 170px;
+    max-width: 170px;
+    max-height: 170px;
+    border: 1px solid black;
+}
+.image-col .image-container:hover {
+    border: 1px solid #FFD700;
+    transition: .2s;
+}
+.image-col .image-container:hover .img-overlay {
+    opacity: 1;
+    transition: .2s;
+}
+
+.image-col img {
+    margin: 10px 10px;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+.img-overlay {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.img-overlay p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/** Forum description **/
+.forum-description {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/** Sub forum **/
+.subforum-container {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+}
+
+/** Mobile devices rules **/
+@media(max-width: 500px) {
+    /** Change forum image style **/
+    .image-col .image-container {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 150px;
+        border: 1px solid black;
+    }
+    .image-col img {
+        margin: 10px 10px;
+        max-width: calc(100% - 20px);
+        max-height: calc(100% - 20px);
+        object-fit: cover;
+    }
+    /** Change card layout **/
+    /** First, that nice image **/
+    .image-col {
+        order: 1;
+    }
+    /** The the title **/
+    .title-col{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        order: 2;
+    }
+    /** Finally the description and subforums **/
+    .description-col {
+        order: 3;
+    }
+    /** Make all subforum containers full width **/
+    .subforum-container {
+        width: 100%;
+    }
+}

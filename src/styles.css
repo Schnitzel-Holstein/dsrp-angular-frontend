@@ -1,5 +1,20 @@
+/** Required fonts **/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Roboto&display=swap');
+@media(max-width: 991px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+@media(max-width: 500px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
 body {
   background-image: url("./assets/images/bg.png");
+  min-height: 100vh;
+  position: relative;
 }
 img {
   width: 100%;
@@ -37,13 +52,15 @@ a:active,
 a.nav-link {
   font-size: 18px;
 }
+/*
+wut
 .m-12 {
   margin: 100px 0;
   color: white;
   outline: 5px solid white;
   outline-offset: 1em;
   text-align: center;
-}
+}*/
 /* Admin panel */
 #sidebar {
   min-width: 270px;
@@ -355,4 +372,41 @@ a.colorTheme{
     margin-right: 2px!important;
     margin-left: 2px!important;
   }
+}
+
+/** Footer **/
+body { 
+  display:flex; 
+  flex-direction:column; 
+}
+
+footer{
+  margin-top:auto; 
+}
+#footer .footer-content {
+  margin-top: 100px;
+  background: #ffc107;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
+.copy-link:link {
+  color: black;
+}
+
+/* visited link */
+.copy-link:visited {
+  color: black;
+}
+
+/* mouse over link */
+.copy-link:hover {
+  color: black;
+}
+
+/* selected link */
+.copy-link:active {
+  color: black;
 }

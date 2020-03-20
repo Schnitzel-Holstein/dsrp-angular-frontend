@@ -1,0 +1,139 @@
+<div class="col-12 bg-light tablon">
+    <div class="row">
+        <div class="col-12 col-md-9">
+            <ul ngbNav #nav="ngbNav" [activeId]="2" [(activeId)]="active" class="nav-tabs">
+                <li [ngbNavItem]="1" style="margin-left: auto!important;">
+                  <a ngbNavLink><i class="fas fa-heart"></i></a>
+                  <ng-template ngbNavContent>
+                  <ngb-carousel interval="50000000" *ngIf="images">
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img [src]="images[0]" alt="Random first slide">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Primera noticia</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img [src]="images[1]" alt="Random second slide">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Segunda noticia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img [src]="images[2]" alt="Random third slide">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Tercera noticia</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </div>
+                    </ng-template>
+                  </ngb-carousel>
+                  <div class="col-12 mt-4 mb-4">
+                    <div class="card-deck">
+                      <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/362x180" alt="Card image cap">
+                        <div class="card-footer">
+                          <div class="text-muted">Nombre Apellido</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/362x180" alt="Card image cap">
+                        <div class="card-footer">
+                          <div class="text-muted">Nombre Apellido</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/362x180" alt="Card image cap">
+                        <div class="card-footer">
+                          <div class="text-muted">Nombre Apellido</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/362x180" alt="Card image cap">
+                        <div class="card-footer">
+                          <div class="text-muted">Nombre Apellido</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/362x180" alt="Card image cap">
+                        <div class="card-footer">
+                          <div class="text-muted">Nombre Apellido</div>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                  </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                  <a ngbNavLink><i class="fas fa-gem"></i></a>
+                  <ng-template ngbNavContent>
+                    <div class="ambien">
+                      <div><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae ipsum at quam rhoncus blandit vel eget orci. Vestibulum commodo placerat eros, ac sodales erat convallis at. Aenean molestie bibendum magna sit amet gravida. Nulla viverra, est non feugiat rhoncus, nunc justo viverra dui, ut scelerisque leo quam quis sapien. Donec tristique sapien eget nunc placerat, vitae interdum eros convallis. Suspendisse rhoncus eget lectus at fringilla. Aenean volutpat luctus ipsum sit amet egestas. Suspendisse placerat consectetur rutrum. Etiam erat lacus, tristique id metus maximus, ornare hendrerit magna.<br><br>Mauris laoreet facilisis blandit. Duis lobortis rutrum ex, vehicula cursus velit. Fusce venenatis iaculis nunc a sodales. Nullam sed mollis ligula. Phasellus lorem erat, commodo eu nulla quis, egestas accumsan libero. Praesent gravida blandit feugiat. Donec pretium tortor eu tincidunt dignissim. Etiam luctus molestie velit, a mollis risus aliquam et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin venenatis consectetur ante, non euismod erat sollicitudin in. Sed imperdiet augue cursus mauris sodales, non vehicula dolor elementum. Praesent venenatis aliquam eros sed aliquam.<br><br>Donec euismod, neque ac ultricies sollicitudin, magna justo aliquam arcu, non fringilla eros sem a mi. Etiam a euismod tortor, at congue nibh. Vivamus et dui vitae velit rhoncus consectetur vel quis ante. Vestibulum hendrerit neque lacus, ac auctor orci fermentum ut. Pellentesque blandit non mi quis gravida. Etiam risus sapien, vulputate eget eros id, commodo viverra ante. Aenean eget aliquam purus. Nunc ultricies quam tellus, et sagittis mi ultricies sed. Aliquam erat volutpat. Aliquam mi mi, cursus quis sem eu, ultricies commodo leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras facilisis quis elit eu tempus. Pellentesque ut consequat nisl. Donec congue euismod tortor, vitae consequat dolor.<br><br>Sed sapien massa, lobortis non dignissim a, semper a lacus. Nunc porta eros id iaculis rutrum. Suspendisse diam nisl, volutpat eu ex nec, luctus gravida ipsum. Donec est ante, elementum a rutrum vitae, ullamcorper ac mi. Ut dui erat, commodo a ullamcorper vulputate, pharetra ac metus. Aliquam nec sodales justo, et pulvinar felis. Proin dictum id odio sed pellentesque.<br><br>Proin tincidunt lacus ac orci efficitur fringilla. Donec eu vulputate leo, eget efficitur lacus. Nam vestibulum porttitor elit in eleifend. Mauris tempor diam mi, in fermentum erat auctor laoreet. Nullam et scelerisque diam, et accumsan orci. Etiam in dui neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent efficitur neque ac ex accumsan, ac molestie purus dignissim. Nullam interdum sem non orci rutrum, et imperdiet eros semper. Vivamus leo purus, tincidunt nec commodo a, consequat mollis arcu. Etiam placerat lectus ex, non mollis dolor pharetra eu. Curabitur sit amet dui ac risus fringilla aliquam quis hendrerit ante. Quisque dui justo, lobortis in dui hendrerit, posuere sollicitudin eros. Nunc est nisl, molestie nec ante at, scelerisque semper libero.</p></div>
+                    </div>
+                    <div class="btns-rapid card-deck">
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="w-100"></div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                      <div class="bg-warning card">Enlace</div>
+                    </div>
+                  </ng-template>
+                </li>
+                <li [ngbNavItem]="3">
+                  <a ngbNavLink><i class="fas fa-angry"></i></a>
+                  <ng-template ngbNavContent>
+                    <div class="btns-free card-deck">
+                      <div class="bg-warning bgfe card">Tema</div>
+                      <div class="bg-warning bgfe card">Tema</div>
+                      <div class="bg-warning bgfe card">Tema</div>
+                      <div class="bg-warning bgfe card">Tema</div>
+                      <div class="bg-warning bgfe card">Tema</div>
+                      <div class="bg-warning bgfe card">Tema</div>
+                      <div class="bg-warning bgfe card">Tema</div>
+                      <div class="w-100"></div>
+                      <div class="bg-info bgrandom card"></div>
+                      <div class="w-100"></div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                      <div class="bg-warning bgsearch card">Tema</div>
+                    </div>
+                  </ng-template>
+                </li>
+              </ul>
+              <div [ngbNavOutlet]="nav" class="mt-2"></div>
+        </div>
+        <div class="col-12 col-md-3 mt-3">
+            <img src="https://via.placeholder.com/810x1180" alt="">
+            <img src="../../../assets/images/discord.png" class="mt-3" alt="">
+        </div>
+    </div>
+</div>
+<section class="forums-index">
+  <app-category *ngFor="let category of categories" [category]="category"></app-category>
+</section>

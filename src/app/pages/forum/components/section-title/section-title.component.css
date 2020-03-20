@@ -1,0 +1,15 @@
+.section-title-container {
+    display: flex;
+}
+.section-title{
+    margin: 50px 0;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    outline: 2px solid white;
+    outline-offset: 1em;
+    text-align: center;
+    width: auto;
+}

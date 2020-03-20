@@ -1,0 +1,38 @@
+/** Outer square **/
+.user-avatar-container {
+    position: absolute;
+    background: #ffc107;
+    width: 120px;
+    height: 120px;
+    z-index: 999;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+/** Inner square, a bit smaller, so theres a "border" but it's still rotated **/
+.inner-square {
+    margin:5px;
+    width: 110px;
+    height: 110px;
+    z-index: 999;
+    overflow: hidden;
+}
+/** We dont want this shit rotated, so put it back to normal **/
+.user-avatar {
+    width: 170px;
+    height: 170px;
+    margin: -25px;
+    object-fit: cover;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/** Make the navbar relative, so the avatar container is there **/
+.menu-navbar {
+    position: relative;
+}
+
+.menu-navbar li {
+    font-weight: bold;
+}
